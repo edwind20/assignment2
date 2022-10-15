@@ -1,0 +1,68 @@
+List the date when you went through the Git Lab Tutorials: 10/14/22
+List the dates when you setup the GitHub Account.  If this was some time ago a rough estimate will do: 04/20/22 (estimate)
+
+1- Paste the console output you saved at the end of step 3.C (2 points)
+
+A: Edwin Diaz@EdwinPC MINGW64 /d/Users/Documents/GitHub/assignment2 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 473 bytes | 473.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/edwind20/assignment2.git
+   b4ff866..9f0b2d7  master -> master
+
+2- How many commits have been done to the repository 
+(not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+A: 8 commits have been made to the reporsitory and we used git shortlog to get the information.
+
+3- When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+
+A: The read me file was last modified at 20:40 hours at Oct 14. We used the ll command to get this information. 
+
+4- Mention two reasons why branches are used in a Git repository (4 points)
+
+A: Remote branches serve the unique purpose to help the developer understand the difference between 
+their local work and the work that is public. 
+
+5- What is the difference between git log and git status? (4 points)
+
+A: git status is a command that helps us see the staged snapshots and the working directory. 
+On the other hand git log shows the differnt commits.
+
+6- What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+A: The command would be git log --diff-filter=A -- Vehicle.h
+
+7- What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+A: The command would be git log --grep="file"
+
+8- In the context of object-oriented programming (I) What is inheritance? 
+(II) What is polymorphism? (III) What is encapsulation? (6 points)
+
+A: Inheritance allows us to define a class that inherits all the methods and attributes from another class. Polymorphism is a 
+fundamental concept in OOP and allows us to use a single interface with different underlying forms like data types or classes.
+Encapsulation is another fundamental conept in OOP and describes the idea of restricting access to methods and attributes in a
+class. 
+
+9- What is the main difference between the “Dictator and Lieutenants” 
+workflow and the “Integration manager” workflow? (5 points)
+
+A: In the integration manager workflow each developer makes pull and pushes to their own repository after pulling from the
+central repository. Each developer has two repositories and the integration manager resolves any integration conflicts that
+may appear along the way when merging the codes. The Dictator and Lieutenants workflow on the other hand makes it so
+everyone makes pull from the central repository and the dictator merges the changes the developers push onto the lieutenant 
+repositories and solve any conflictsthat may appear. Keep in mind that not all developers work on the same lieutenant repositories.
+
+10- How would a team of 100 developers benefit from following the 
+“Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+A: What makes the Dictator and Lieutenants workflow much better is because there is one person/devloper, in this case
+the dictator that manages the merging of the code that comes from the lieutenant repositories. While in the centralized workflow
+everyone is in charge of solving conflicts that appear when merging the code which makes the productivity scarce compared to
+having one person specialized in the matter like the Dictator and Lieutenants workflow. 
